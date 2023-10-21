@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.body{
+    background-image: url("bg.jpg");
+    min-height: 100vh;
+    background-size: 105vw 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#board{
+    background: linear-gradient(rgb(17, 229, 66),rgb(147, 103, 218));
+    width: 90vmin;
+    height: 90vmin;
+    border: 5px solid black;
+    display: grid;
+    grid-template-columns:repeat(18,1fr) ;
+    grid-template-rows: repeat(18,1fr);
+}
+
+.head{
+    background: rgb(230, 241, 231);
+    border: 1.5vmin solid purple;
+    border-radius: 12px;
+}
+.snake{
+    background-color: rgb(18, 7, 18);
+    border: 1vmin solid white;
+    border-radius: 100px;
+}
+.food{
+    background: red;
+    border: 1vmin solid rgb(15, 10, 10);
+    border-radius: 12px;
+}
+
+#scoreBox{
+    position: absolute;
+    top: 9px;
+    right: 200px;
+    font-weight: bold;
+    font-size: 39px;
+}
